@@ -42,11 +42,11 @@ router.post("/", async (req, res) => {
     const mailOptions = {
       to: user.email,
       from: "tmddhks0104@gmail.com",
-      subject: "Hi there! Password reset request",
-      html: `<p>Hey ${user.name
+      subject: "[wewe] 비밀번호 초기화 메일입니다.",
+      html: `<p>안녕하세요 ${user.name
         .split(" ")[0]
-        .toString()}, There was a request for password reset. <a href=${href}>Click this link to reset the password </a>   </p>
-      <p>This token is valid for only 1 hour.</p>`,
+        .toString()}, 비밀번호 초기화 요청이 있었습니다. <a href=${href}>비밀번호를 초기화하기 위해 이 링크를 클릭하세요. </a>   </p>
+      <p>1시간동안 유효한 링크입니다.</p>`,
     };
 
     transporter.sendMail(mailOptions, (err, info) => err && console.log(err));
