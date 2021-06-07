@@ -69,7 +69,7 @@ function CommonInputs({
             icon="attention"
             info
             size="small"
-            header="Social Media Links Are Optional!"
+            header="sns주소는 선택입니다"
           />
         </>
       )}

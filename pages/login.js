@@ -62,7 +62,7 @@ function Login() {
         <Segment>
           <Form.Input
             required
-            label="Email"
+            label="이메일"
             placeholder="Email"
             name="email"
             value={email}
@@ -74,7 +74,7 @@ function Login() {
           />
 
           <Form.Input
-            label="Password"
+            label="비밀번호"
             placeholder="Password"
             name="password"
             value={password}
@@ -94,7 +94,7 @@ function Login() {
           <Divider hidden />
           <Button
             icon="signup"
-            content="Login"
+            content="로그인"
             type="submit"
             color="orange"
             disabled={submitDisabled}
