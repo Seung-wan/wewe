@@ -98,13 +98,13 @@ function CardPost({ post, user, setPosts, setShowToastr, socket }) {
                     />
                   }
                 >
-                  <Header as="h4" content="Are you sure?" />
-                  <p>This action is irreversible!</p>
+                  <Header as="h4" content="확실한가요?" />
+                  <p>되돌릴 수 없습니다.</p>
 
                   <Button
                     color="red"
                     icon="trash"
-                    content="Delete"
+                    content="삭제"
                     onClick={() =>
                       deletePost(post._id, setPosts, setShowToastr)
                     }
