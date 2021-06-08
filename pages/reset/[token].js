@@ -55,9 +55,9 @@ function TokenPage() {
           attached
           success
           size="large"
-          header="Password reset successfull"
+          header="초기화에 성공했습니다."
           icon="check"
-          content="Login Again"
+          content="다시 로그인해주세요"
           style={{ cursor: "pointer" }}
           onClick={() => router.push("/login")}
         />
@@ -65,7 +65,7 @@ function TokenPage() {
         <Message
           attached
           icon="settings"
-          header="Reset Password"
+          header="비밀번호 초기화"
           color="teal"
         />
       )}
@@ -84,8 +84,8 @@ function TokenPage() {
               icon="eye"
               type="password"
               iconPosition="left"
-              label="New Password"
-              placeholder="Enter new Password"
+              label="새로운 비밀번호"
+              // placeholder="비밀번호"
               name="field1"
               onChange={handleChange}
               value={field1}
@@ -96,8 +96,8 @@ function TokenPage() {
               icon="eye"
               type="password"
               iconPosition="left"
-              label="Confirm Password"
-              placeholder="Confirm new Password"
+              label="비밀번호 확인"
+              // placeholder="Confirm new Password"
               name="field2"
               onChange={handleChange}
               value={field2}
@@ -111,7 +111,7 @@ function TokenPage() {
               icon="configure"
               type="submit"
               color="orange"
-              content="Reset"
+              content="초기화"
             />
           </Segment>
         </Form>

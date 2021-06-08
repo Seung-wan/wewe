@@ -38,8 +38,8 @@ function ResetPage() {
         <Message
           attached
           icon="mail"
-          header="Check Your Inbox"
-          content="Please check your inbox for further instructions"
+          header="이메일 전송"
+          content="이메일을 확인해주세요"
           success
         />
       ) : (
