@@ -46,7 +46,7 @@ function ResetPage() {
         <Message
           attached
           icon="settings"
-          header="Reset Password"
+          header="비밀번호 초기화"
           color="teal"
         />
       )}
@@ -64,8 +64,8 @@ function ResetPage() {
             icon="mail outline"
             type="email"
             iconPosition="left"
-            label="Email"
-            placeholder="Enter email address"
+            label="이메일"
+            placeholder="이메일 주소를 입력하세요."
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
@@ -77,7 +77,7 @@ function ResetPage() {
             icon="configure"
             type="submit"
             color="orange"
-            content="Submit"
+            content="제출"
           />
         </Segment>
       </Form>
