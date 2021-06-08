@@ -205,7 +205,7 @@ function Signup() {
           <Divider hidden />
           <Button
             icon="signup"
-            content="Signup"
+            content="회원가입"
             type="submit"
             color="orange"
             disabled={submitDisabled || !usernameAvailable}

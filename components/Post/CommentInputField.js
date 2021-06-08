@@ -20,7 +20,7 @@ function CommentInputField({ postId, user, setComments }) {
       <Form.Input
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Add Comment"
+        placeholder="댓글을 작성하세요."
         action={{
           color: "blue",
           icon: "edit",

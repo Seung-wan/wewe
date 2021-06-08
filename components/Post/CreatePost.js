@@ -90,7 +90,7 @@ function CreatePost({ user, setPosts }) {
         <Form.Group>
           <Image src={user.profilePicUrl} circular avatar inline />
           <Form.TextArea
-            placeholder="Whats Happening"
+            placeholder="게시글을 작성하세요."
             name="text"
             value={newPost.text}
             onChange={handleChange}
@@ -172,7 +172,7 @@ function CreatePost({ user, setPosts }) {
         <Button
           circular
           disabled={newPost.text === "" || loading}
-          content={<strong>Post</strong>}
+          content={<strong>작성</strong>}
           style={{ backgroundColor: "#1DA1F2", color: "white" }}
           icon="send"
           loading={loading}

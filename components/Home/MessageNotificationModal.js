@@ -41,7 +41,7 @@ function MessageNotificationModal({
         closeOnDimmerClick
       >
         <Modal.Header
-          content={`New Message from ${newMessageReceived.senderName}`}
+          content={`${newMessageReceived.senderName} 의 새로운 메세지`}
         />
 
         <Modal.Content>
@@ -65,7 +65,7 @@ function MessageNotificationModal({
               <Form reply onSubmit={formSubmit}>
                 <Form.Input
                   size="large"
-                  placeholder="Send New Message"
+                  placeholder="메세지를 입력하세요."
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   action={{
@@ -81,7 +81,7 @@ function MessageNotificationModal({
 
           <div style={{ marginTop: "5px" }}>
             <Link href={`/messages?message=${newMessageReceived.sender}`}>
-              <a>View All Messages</a>
+              <a>모두 보기</a>
             </Link>
 
             <br />
@@ -100,8 +100,7 @@ const Instructions = ({ username }) => (
       <Icon name="help" />
       <List.Content>
         <List.Header>
-          If you do not like this popup to appear when you receive a new
-          message:
+          새로운 메세지가 도착했을때 이 팝업이 보기 싫다면
         </List.Header>
       </List.Content>
     </List.Item>
@@ -109,15 +108,15 @@ const Instructions = ({ username }) => (
     <List.Item>
       <Icon name="hand point right" />
       <List.Content>
-        You can disable it by going to
+        알람을 종료할 수 있습니다.
         <Link href={`/${username}`}>
           <a> Account </a>
         </Link>
-        Page and clicking on Settings Tab.
+        페이지에서 세팅탭을 들어가세요.
       </List.Content>
     </List.Item>
 
-    <List.Item>
+    {/* <List.Item>
       <Icon name="hand point right" />
       Inside the menu,there is an setting named: Show New Message Popup?
     </List.Item>
@@ -125,7 +124,7 @@ const Instructions = ({ username }) => (
     <List.Item>
       <Icon name="hand point right" />
       Just toggle the setting to disable/enable the Message Popup to appear.
-    </List.Item>
+    </List.Item> */}
   </List>
 );
 
