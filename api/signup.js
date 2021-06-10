@@ -15,7 +15,7 @@ const userPng =
   "https://res.cloudinary.com/indersingh/image/upload/v1593464618/App/user_mklcpl.png";
 
 const regexUserName = /^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/;
-
+// const regexUserName = /^[\w\Wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;  닉네임(글자수만 제한2~20)
 router.get("/:username", async (req, res) => {
   const { username } = req.params;
 
